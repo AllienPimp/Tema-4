@@ -52,7 +52,7 @@ header>nav>ul {
 /* info bar */
 
 .infoBar {
-    /* border: red 2px dotted; */
+    /* border: red 1px dotted; */
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
@@ -64,18 +64,19 @@ header>nav>ul {
     margin-bottom: 10px;
 }
 
-.infoBar dl {
+.infoBar ul {
     /* border: red 2px solid; */
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    width: 100px;
+    width: auto;
 }
 
-.infoBar dl a {
-    text-decoration: none;
+.infoBar ul li a {
     color: black;
+    text-decoration: none;
+}
+
+.infoBar ul li {
+    list-style-type: none;
+    line-height: 2;
 }
 
 
@@ -106,14 +107,29 @@ main {
 }
 
 .description {
-    border: crimson 2px solid;
-    background-color: lightblue;
+    /* border: crimson 2px solid; */
+    background-color: dodgerblue;
+    color: white;
     position: absolute;
     top: 10px;
     left: 10px;
     width: 330px;
     height: 180px;
     margin: 10px 10px;
+}
+
+.description h6 {
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: dotted black 1px;
+    margin: 5px;
+    padding-bottom: 5px;
+}
+
+.description p {
+    font-size: 1.2rem;
+    margin: 5px;
+    padding-top: 5px;
 }
 
 .slider button {
@@ -167,6 +183,7 @@ main {
 .blogPost>article>p {
     margin-left: 25px;
     margin-right: 25px;
+    font-size: 1.2rem;
 }
 
 .blogPost>article>a {
@@ -174,14 +191,112 @@ main {
     margin-right: 25px;
     float: right;
     padding-top: 10px;
+    font-weight: bold;
+    color: blue;
+}
+
+div {
+    margin-top: 20px;
+    border-top: black dashed 1px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    /* border: blue 1px solid; */
+}
+
+div>article {
+    width: 65.5%;
+    margin-top: 15px;
+    border-bottom: dotted 1px;
+}
+
+div>article>h6 {
+    /* display: block; */
+    float: right;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px 0px;
+    border-bottom: black 1px dotted;
+    margin-bottom: 15px;
+    width: 404px;
+}
+
+div>article>img {
+    float: left;
+    display: block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid;
+    padding: 5px;
+}
+
+div article p {
+    font-size: 1.2rem;
+}
+
+div>article>a {
+    text-decoration: none;
+    margin-right: 25px;
+    float: right;
+    padding-top: 10px;
+    color: blue;
+}
+
+div>aside {
+    /* border: dotted red 2px; */
+    margin-top: 15px;
+    width: 31%;
+    padding: 20px 5px 0px 5px;
+    background-color: lightgrey;
+}
+
+div aside p {
+    font-size: 16px;
+    border-bottom: dashed 1px black;
+    padding-bottom: 5px;
+}
+
+div>aside>ul>li>a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+div aside ul li {
+    list-style-type: none;
+    border-bottom: solid black 1px;
+}
+
+div aside ul {
+    padding-top: 10px;
 }
 
 .partners {
-    border: 2px red solid;
+    /* border: 2px red solid; */
     background-color: seashell;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.partners img {
+    width: 174px;
+    height: 100px;
+    border: 1px solid;
+    padding: 5px;
 }
 
 footer {
-    border: 2px blue solid;
-    background-color: rosybrown;
+    /* border: 2px blue solid; */
+    background-color: dodgerblue;
+    padding: 10px 0px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    color: white;
 }
